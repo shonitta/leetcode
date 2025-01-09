@@ -8,14 +8,14 @@ package leetcode
 
 // @lc code=start
 func prefixCount(words []string, pref string) int {
-	len_pref := len(pref)
+	lenPref := len(pref)
 	count := 0
 	for _, word := range words {
-		if len(word) < len_pref {
+		if len(word) < lenPref {
 			continue
 		}
 
-		if word[:len_pref] == pref {
+		if word[:lenPref] == pref {
 			count++
 		}
 	}
